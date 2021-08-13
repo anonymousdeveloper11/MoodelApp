@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="10dp"
+    app:cardElevation="8dp"
+
+    android:fadingEdgeLength="@dimen/cardview_default_elevation"
+    android:background="@color/colorWhite">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/courseImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_image"
+
+        />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Course Title"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/SecondaryText"
+        android:textSize="15sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/moreIb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/ic_arrow_right"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="@color/SecondaryText"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
